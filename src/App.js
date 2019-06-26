@@ -1,26 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Main } from './styles/NavStyle';
+import { NavBar, Circles, Content } from './components';
+import WebfontLoader from '@dr-kobros/react-webfont-loader';
+
+const config = {
+	custom: {
+		families: [ 'hobbit' ],
+		urls: [ './index.css' ],
+	},
+};
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<WebfontLoader config={config}>
+			<Main>
+				<NavBar />
+				<Circles />
+				<Content />
+			</Main>
+		</WebfontLoader>
+	);
 }
 
 export default App;

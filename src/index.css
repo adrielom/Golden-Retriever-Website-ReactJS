@@ -1,13 +1,41 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+		"Droid Sans", "Helvetica Neue", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+@font-face {
+	font-family: hobbit;
+	src: url('../src/fonts/hobbitonbrushhand.ttf');
+}
+
+@font-face {
+	font-family: kamerik-bold-oblique;
+	src: url('../src/fonts/kamerik-bold-oblique.ttf');
+}
+@font-face {
+	font-family: kamerik-bold;
+	src: url('../src/fonts/kamerik-bold.ttf');
+}
+@font-face {
+	font-family: kamerik-heavy-oblique;
+	src: url('../src/fonts/kamerik-heavy-oblique.ttf');
+}
+@font-face {
+	font-family: kamerik-light-oblique;
+	src: url('../src/fonts/kamerik-light-oblique.ttf');
+}
+@font-face {
+	font-family: kamerik-thin-oblique;
+	src: url('../src/fonts/kamerik-thin-oblique.ttf');
+}
+@font-face {
+	font-family: kamerik-book;
+	src: url('../src/fonts/kamerik-book.ttf');
 }
