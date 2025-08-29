@@ -1,5 +1,6 @@
 name: Deploy React App to GitHub Pages
-
+env: 
+  NODE_OPTIONS: --openssl-legacy-provider
 on:
   push:
     branches: [master]  # Change if your default branch is different
