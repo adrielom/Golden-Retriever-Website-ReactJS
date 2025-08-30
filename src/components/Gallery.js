@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { GalleryStyle } from '../styles/ContentStyle';
 import { CircleImage } from '../styles/CircleStyle';
 import img1 from '../images/358599_thumb.png';
