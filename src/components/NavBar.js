@@ -9,9 +9,9 @@ const NavBar = () => {
 				<i className='fas fa-bars' />
 			</div>
 			<div className='headerLinks'>
-				<a href='#'>Start Here</a>
-				<a href='#'>About</a>
-				<a href='#'>The Golden History</a>
+				<button type="button" className="link-btn">Start Here</button>
+				<button type="button" className="link-btn">About</button>
+				<button type="button" className="link-btn">The Golden History</button>
 			</div>
 			<div className='headerSearch'>
 				<input type='text' placeholder='Search' name='search' id='search' />

@@ -1,9 +1,8 @@
 name: Deploy React App to GitHub Pages
-env: 
-  NODE_OPTIONS: --openssl-legacy-provider
+
 on:
   push:
-    branches: [master]  # Change if your default branch is different
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -22,22 +21,24 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18  # Use LTS for CRA
+          node-version: 22
           cache: 'yarn'
 
       # 3. Install dependencies
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # 4. Build the project
+      # 4. Build project with legacy OpenSSL provider
       - name: Build project
         run: yarn build
+        env:
+          NODE_OPTIONS: --openssl-legacy-provider
 
-      # 5. Upload Pages artifact
-      - name: Upload artifact
+      # 5. Upload artifact (build folder)
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: build  # CRA output folder is 'build'
+          path: build
 
       # 6. Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
